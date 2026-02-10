@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./assets/java-hero-banner.svg" alt="Java Programming Banner" width="100%">
+
 # Java Programming — From Zero to Hero ☕🚀
 
 **A structured, topic-wise collection of Java programs covering fundamentals, problem-solving & interview prep**
@@ -18,6 +20,10 @@ Every program is **well-commented** with clear explanations — learn the _what_
 ---
 
 ## 📌 Highlights
+
+<div align="center">
+<img src="./assets/features-showcase.svg" alt="Features Showcase" width="90%">
+</div>
 
 | | Feature |
 |---|---|
@@ -100,6 +106,13 @@ Java/
 │   ├── reverseString.java          # Reverse a string (multiple methods)
 │   └── reverseInteger.java         # Reverse an integer
 │
+├── assets/                         # Images & visual resources
+│   ├── java-hero-banner.svg
+│   ├── features-showcase.svg
+│   ├── module-icons.svg
+│   ├── learning-roadmap.svg
+│   └── complexity-chart.svg
+│
 ├── addtion.java                    # Quick addition program
 ├── JAVA UNIT 1.pdf                 # Unit 1 theory notes
 ├── Java_ArrayList_Cheatsheet.pdf   # ArrayList cheatsheet
@@ -110,6 +123,10 @@ Java/
 ---
 
 ## 🎯 Topics & Programs at a Glance
+
+<div align="center">
+<img src="./assets/module-icons.svg" alt="Module Icons" width="95%">
+</div>
 
 ### 1️⃣ Java Basics
 
@@ -194,6 +211,10 @@ Java/
 
 ## 📊 Complexity Quick Reference
 
+<div align="center">
+<img src="./assets/complexity-chart.svg" alt="Complexity Chart" width="85%">
+</div>
+
 | Algorithm / Technique | Time | Space |
 |----------------------|:----:|:-----:|
 | Linear Search | `O(n)` | `O(1)` |
@@ -273,6 +294,10 @@ public class programName {
 
 ## 🗺️ Learning Roadmap
 
+<div align="center">
+<img src="./assets/learning-roadmap.svg" alt="Learning Roadmap" width="90%">
+</div>
+
 ```
 Start Here
     │
@@ -300,6 +325,25 @@ Start Here
 
 ---
 
+## 📈 Repository Statistics
+
+<div align="center">
+
+| 📊 Metric | 🔢 Count |
+|-----------|:--------:|
+| **Total Programs** | 50+ |
+| **Code Lines** | ~3,500+ |
+| **Pattern Programs** | 17 |
+| **Array Programs** | 8 |
+| **Function Programs** | 9 |
+| **Loop Programs** | 9 |
+| **Topics Covered** | 7 Modules |
+| **PDF Resources** | 3 |
+
+</div>
+
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome! Here's how you can help:
@@ -312,6 +356,14 @@ Contributions are welcome! Here's how you can help:
 
 > Please follow the existing code style — add comments, use `Scanner` for input, and keep one program per file.
 
+### Contribution Ideas
+
+- Add more advanced programs (searching, sorting algorithms)
+- Implement data structure programs (LinkedList, Stack, Queue)
+- Add exception handling examples
+- Create OOP concept programs
+- Improve documentation
+
 ---
 
 ## ⭐ Show Your Support
@@ -320,6 +372,16 @@ If this repository helped you learn Java, give it a **star** ⭐ — it motivate
 
 ---
 
+## 📜 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
 <div align="center">
+  
+**Happy Coding! ☕💻**
+
   <sub>Built with ❤️ for the Java learning community</sub>
+  
 </div>
