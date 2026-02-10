@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.3" />
+    </linearGradient>
+    
+    <filter id="barShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="500" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" font-family="Arial, sans-serif" font-size="26" fill="#2c3e50" text-anchor="middle" font-weight="bold">Time Complexity Overview</text>
+  <text x="450" y="60" font-family="Arial, sans-serif" font-size="14" fill="#7f8c8d" text-anchor="middle">Performance characteristics of key algorithms in this repository</text>
+  
+  <!-- Chart area -->
+  <rect x="80" y="90" width="740" height="320" fill="url(#chartGrad)" rx="8"/>
+  
+  <!-- Grid lines -->
+  <g stroke="#bdc3c7" stroke-width="1" opacity="0.3">
+    <line x1="80" y1="150" x2="820" y2="150"/>
+    <line x1="80" y1="210" x2="820" y2="210"/>
+    <line x1="80" y1="270" x2="820" y2="270"/>
+    <line x1="80" y1="330" x2="820" y2="330"/>
+    <line x1="80" y1="390" x2="820" y2="390"/>
+  </g>
+  
+  <!-- Y-axis labels -->
+  <g font-family="'Courier New', monospace" font-size="12" fill="#34495e" text-anchor="end">
+    <text x="70" y="95">Fast</text>
+    <text x="70" y="155">↑</text>
+    <text x="70" y="215"></text>
+    <text x="70" y="275"></text>
+    <text x="70" y="335">↓</text>
+    <text x="70" y="395">Slow</text>
+  </g>
+  
+  <!-- Bars with labels -->
+  
+  <!-- O(1) - Constant -->
+  <g>
+    <rect x="100" y="370" width="70" height="20" rx="4" fill="#27ae60" filter="url(#barShadow)"/>
+    <text x="135" y="355" font-family="'Courier New', monospace" font-size="11" fill="#27ae60" text-anchor="middle" font-weight="bold">O(1)</text>
+    <text x="135" y="440" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Array</text>
+    <text x="135" y="455" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Access</text>
+  </g>
+  
+  <!-- O(log n) - Logarithmic -->
+  <g>
+    <rect x="200" y="340" width="70" height="50" rx="4" fill="#2ecc71" filter="url(#barShadow)"/>
+    <text x="235" y="325" font-family="'Courier New', monospace" font-size="11" fill="#2ecc71" text-anchor="middle" font-weight="bold">O(log n)</text>
+    <text x="235" y="440" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Binary</text>
+    <text x="235" y="455" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Search*</text>
+  </g>
+  
+  <!-- O(n) - Linear -->
+  <g>
+    <rect x="300" y="250" width="70" height="140" rx="4" fill="#3498db" filter="url(#barShadow)"/>
+    <text x="335" y="235" font-family="'Courier New', monospace" font-size="11" fill="#3498db" text-anchor="middle" font-weight="bold">O(n)</text>
+    <text x="335" y="440" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Linear Search</text>
+    <text x="335" y="455" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Min/Max</text>
+  </g>
+  
+  <!-- O(n log n) - Linearithmic -->
+  <g>
+    <rect x="400" y="200" width="70" height="190" rx="4" fill="#9b59b6" filter="url(#barShadow)"/>
+    <text x="435" y="185" font-family="'Courier New', monospace" font-size="11" fill="#9b59b6" text-anchor="middle" font-weight="bold">O(n log n)</text>
+    <text x="435" y="440" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Merge Sort*</text>
+    <text x="435" y="455" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Quick Sort*</text>
+  </g>
+  
+  <!-- O(n²) - Quadratic -->
+  <g>
+    <rect x="500" y="140" width="70" height="250" rx="4" fill="#e67e22" filter="url(#barShadow)"/>
+    <text x="535" y="125" font-family="'Courier New', monospace" font-size="11" fill="#e67e22" text-anchor="middle" font-weight="bold">O(n²)</text>
+    <text x="535" y="440" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Bubble Sort</text>
+    <text x="535" y="455" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Nested Loops</text>
+  </g>
+  
+  <!-- O(n × m) - Two Variables -->
+  <g>
+    <rect x="600" y="170" width="70" height="220" rx="4" fill="#f39c12" filter="url(#barShadow)"/>
+    <text x="635" y="155" font-family="'Courier New', monospace" font-size="11" fill="#f39c12" text-anchor="middle" font-weight="bold">O(n×m)</text>
+    <text x="635" y="440" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Matrix</text>
+    <text x="635" y="455" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Operations</text>
+  </g>
+  
+  <!-- O(2^n) - Exponential (shown smaller for reference) -->
+  <g>
+    <rect x="700" y="100" width="70" height="290" rx="4" fill="#e74c3c" filter="url(#barShadow)"/>
+    <text x="735" y="85" font-family="'Courier New', monospace" font-size="11" fill="#e74c3c" text-anchor="middle" font-weight="bold">O(2ⁿ)</text>
+    <text x="735" y="440" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Recursive</text>
+    <text x="735" y="455" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">Fibonacci*</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(100, 470)">
+    <circle cx="5" cy="-2" r="4" fill="#27ae60"/>
+    <text x="15" y="2" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">Excellent</text>
+    
+    <circle cx="90" cy="-2" r="4" fill="#3498db"/>
+    <text x="100" y="2" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">Good</text>
+    
+    <circle cx="165" cy="-2" r="4" fill="#e67e22"/>
+    <text x="175" y="2" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">Fair</text>
+    
+    <circle cx="230" cy="-2" r="4" fill="#e74c3c"/>
+    <text x="240" y="2" font-family="Arial, sans-serif" font-size="11" fill="#2c3e50">Poor</text>
+    
+    <text x="320" y="2" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d" font-style="italic">* Not implemented in this repo</text>
+  </g>
+  
+  <!-- Programs in this repository section -->
+  <g transform="translate(50, 90)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">✓ In This Repo:</text>
+    <text x="0" y="18" font-family="Arial, sans-serif" font-size="11" fill="#27ae60">• Array Min/Max (O(n))</text>
+    <text x="0" y="33" font-family="Arial, sans-serif" font-size="11" fill="#3498db">• Linear Search (O(n))</text>
+    <text x="0" y="48" font-family="Arial, sans-serif" font-size="11" fill="#e67e22">• Bubble Sort (O(n²))</text>
+    <text x="0" y="63" font-family="Arial, sans-serif" font-size="11" fill="#f39c12">• Spiral Matrix (O(n×m))</text>
+    <text x="0" y="78" font-family="Arial, sans-serif" font-size="11" fill="#f39c12">• Matrix Transpose (O(n×m))</text>
+  </g>
+</svg>

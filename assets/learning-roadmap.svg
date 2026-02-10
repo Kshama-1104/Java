@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+  <defs>
+    <linearGradient id="startGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EE5A6F;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="basicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ECDC4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#44A08D;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="loopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD93D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FDB750;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="funcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A8E6CF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3DDC84;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="patternGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A29BFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6C5CE7;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="arrayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#74B9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0984E3;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="stringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FD79A8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E84393;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="recurGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b894;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00cec9;stop-opacity:1" />
+    </linearGradient>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#34495e" />
+    </marker>
+    
+    <filter id="nodeShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="32" fill="#2c3e50" text-anchor="middle" font-weight="bold">Your Learning Journey</text>
+  <text x="500" y="70" font-family="Arial, sans-serif" font-size="16" fill="#7f8c8d" text-anchor="middle">Follow the path from beginner to advanced</text>
+  
+  <!-- Start Node -->
+  <g transform="translate(420, 100)">
+    <circle cx="80" cy="50" r="45" fill="url(#startGrad)" filter="url(#nodeShadow)"/>
+    <text x="80" y="48" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">START</text>
+    <text x="80" y="68" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Begin Here</text>
+  </g>
+  
+  <!-- Arrow from Start to Basic -->
+  <path d="M 500,160 L 500,200" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Level 1: Basic -->
+  <g transform="translate(390, 210)">
+    <rect width="220" height="70" rx="35" fill="url(#basicGrad)" filter="url(#nodeShadow)"/>
+    <text x="110" y="35" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">1. Java Basics</text>
+    <text x="110" y="53" font-family="Arial, sans-serif" font-size="13" fill="white" text-anchor="middle" opacity="0.9">Syntax & I/O</text>
+  </g>
+  
+  <!-- Arrow to Loops -->
+  <path d="M 500,290 L 500,330" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Level 2: Loops -->
+  <g transform="translate(390, 340)">
+    <rect width="220" height="70" rx="35" fill="url(#loopGrad)" filter="url(#nodeShadow)"/>
+    <text x="110" y="35" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">2. Loops</text>
+    <text x="110" y="53" font-family="Arial, sans-serif" font-size="13" fill="white" text-anchor="middle" opacity="0.9">Control Flow</text>
+  </g>
+  
+  <!-- Arrow to Functions -->
+  <path d="M 500,420 L 500,460" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Level 3: Functions -->
+  <g transform="translate(390, 470)">
+    <rect width="220" height="70" rx="35" fill="url(#funcGrad)" filter="url(#nodeShadow)"/>
+    <text x="110" y="35" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">3. Functions</text>
+    <text x="110" y="53" font-family="Arial, sans-serif" font-size="13" fill="white" text-anchor="middle" opacity="0.9">Methods & Reuse</text>
+  </g>
+  
+  <!-- Branch from Functions -->
+  <path d="M 390,505 L 240,505 L 240,390" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 610,505 L 760,505 L 760,390" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Left Branch: Patterns -->
+  <g transform="translate(120, 310)">
+    <rect width="220" height="70" rx="35" fill="url(#patternGrad)" filter="url(#nodeShadow)"/>
+    <text x="110" y="35" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">4. Patterns</text>
+    <text x="110" y="53" font-family="Arial, sans-serif" font-size="13" fill="white" text-anchor="middle" opacity="0.9">Nested Loops</text>
+  </g>
+  
+  <!-- Right Branch: Arrays -->
+  <g transform="translate(660, 310)">
+    <rect width="220" height="70" rx="35" fill="url(#arrayGrad)" filter="url(#nodeShadow)"/>
+    <text x="110" y="35" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">5. Arrays</text>
+    <text x="110" y="53" font-family="Arial, sans-serif" font-size="13" fill="white" text-anchor="middle" opacity="0.9">1D & 2D Matrices</text>
+  </g>
+  
+  <!-- Converge to Strings -->
+  <path d="M 230,310 L 230,220 L 440,220" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 770,310 L 770,220 L 560,220" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Strings Node -->
+  <g transform="translate(390, 180)">
+    <rect width="220" height="70" rx="35" fill="url(#stringGrad)" filter="url(#nodeShadow)"/>
+    <text x="110" y="35" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">6. Strings</text>
+    <text x="110" y="53" font-family="Arial, sans-serif" font-size="13" fill="white" text-anchor="middle" opacity="0.9">String Methods</text>
+  </g>
+  
+  <!-- Arrow to Recursion -->
+  <path d="M 500,170 L 500,130" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Final: Recursion -->
+  <g transform="translate(390, 50)">
+    <rect width="220" height="70" rx="35" fill="url(#recurGrad)" filter="url(#nodeShadow)"/>
+    <text x="110" y="35" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">7. Recursion</text>
+    <text x="110" y="53" font-family="Arial, sans-serif" font-size="13" fill="white" text-anchor="middle" opacity="0.9">Recursive Thinking</text>
+  </g>
+  
+  <!-- Annotations -->
+  <g opacity="0.7">
+    <text x="650" y="250" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d" font-style="italic">Syntax Foundation</text>
+    <text x="50" y="480" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d" font-style="italic">Visual Practice</text>
+    <text x="840" y="480" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d" font-style="italic">Data Structures</text>
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d" font-style="italic">Advanced Concept</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(30, 550)">
+    <rect width="15" height="15" rx="3" fill="#3498db" opacity="0.3"/>
+    <text x="25" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Foundational Topics</text>
+    
+    <rect x="180" width="15" height="15" rx="3" fill="#e74c3c" opacity="0.3"/>
+    <text x="205" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Advanced Topics</text>
+    
+    <rect x="340" width="15" height="15" rx="3" fill="#2ecc71" opacity="0.3"/>
+    <text x="365" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Practice Intensive</text>
+  </g>
+</svg>
