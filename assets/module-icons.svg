@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400">
+  <defs>
+    <linearGradient id="modGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EE5A6F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="modGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ECDC4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#44A08D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="modGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#A8E6CF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3DDC84;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="modGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD93D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FDB750;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="modGrad5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#A29BFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6C5CE7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="modGrad6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FD79A8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E84393;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="modGrad7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#74B9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0984E3;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="400" fill="#f7f9fc"/>
+
+  <!-- Title -->
+  <text x="550" y="40" font-family="Arial, sans-serif" font-size="28" fill="#2c3e50" text-anchor="middle" font-weight="bold">7 Comprehensive Modules</text>
+  <rect x="350" y="50" width="400" height="3" rx="1.5" fill="#3498db" opacity="0.3"/>
+
+  <!-- Module 1: Java Basics -->
+  <g transform="translate(40, 80)" filter="url(#cardShadow)">
+    <rect width="240" height="130" rx="15" fill="url(#modGrad1)"/>
+    <circle cx="50" cy="40" r="25" fill="white" opacity="0.3"/>
+    <text x="50" y="50" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">&#x2615;</text>
+    <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" fill="white" font-weight="bold">Java Basics</text>
+    <text x="20" y="75" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Hello World</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Variables &amp; Types</text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Input &amp; Output</text>
+  </g>
+
+  <!-- Module 2: Arrays -->
+  <g transform="translate(300, 80)" filter="url(#cardShadow)">
+    <rect width="240" height="130" rx="15" fill="url(#modGrad2)"/>
+    <circle cx="50" cy="40" r="25" fill="white" opacity="0.3"/>
+    <text x="50" y="50" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">&#x1F4CA;</text>
+    <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" fill="white" font-weight="bold">Arrays</text>
+    <text x="20" y="75" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; 1D &amp; 2D Arrays</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Searching &amp; Sorting</text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Matrix Operations</text>
+  </g>
+
+  <!-- Module 3: Functions -->
+  <g transform="translate(560, 80)" filter="url(#cardShadow)">
+    <rect width="240" height="130" rx="15" fill="url(#modGrad3)"/>
+    <circle cx="50" cy="40" r="25" fill="white" opacity="0.3"/>
+    <text x="50" y="50" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">&#x2699;&#xFE0F;</text>
+    <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" fill="white" font-weight="bold">Functions</text>
+    <text x="20" y="75" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Factorial &amp; Fibonacci</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Power &amp; GCD</text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Modular Code</text>
+  </g>
+
+  <!-- Module 4: Loops -->
+  <g transform="translate(820, 80)" filter="url(#cardShadow)">
+    <rect width="240" height="130" rx="15" fill="url(#modGrad4)"/>
+    <circle cx="50" cy="40" r="25" fill="white" opacity="0.3"/>
+    <text x="50" y="50" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">&#x1F504;</text>
+    <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" fill="white" font-weight="bold">Loops</text>
+    <text x="20" y="75" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; For &amp; While Loops</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Prime Numbers</text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Control Flow</text>
+  </g>
+
+  <!-- Module 5: Patterns -->
+  <g transform="translate(170, 240)" filter="url(#cardShadow)">
+    <rect width="240" height="130" rx="15" fill="url(#modGrad5)"/>
+    <circle cx="50" cy="40" r="25" fill="white" opacity="0.3"/>
+    <text x="50" y="50" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">&#x2728;</text>
+    <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" fill="white" font-weight="bold">Patterns</text>
+    <text x="20" y="75" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; 17 Unique Patterns</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Stars &amp; Numbers</text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Diamonds &amp; Butterflies</text>
+  </g>
+
+  <!-- Module 6: Recursion -->
+  <g transform="translate(430, 240)" filter="url(#cardShadow)">
+    <rect width="240" height="130" rx="15" fill="url(#modGrad6)"/>
+    <circle cx="50" cy="40" r="25" fill="white" opacity="0.3"/>
+    <text x="50" y="50" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">&#x267E;&#xFE0F;</text>
+    <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" fill="white" font-weight="bold">Recursion</text>
+    <text x="20" y="75" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Recursive Functions</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Base Cases</text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Stack Visualization</text>
+  </g>
+
+  <!-- Module 7: Strings -->
+  <g transform="translate(690, 240)" filter="url(#cardShadow)">
+    <rect width="240" height="130" rx="15" fill="url(#modGrad7)"/>
+    <circle cx="50" cy="40" r="25" fill="white" opacity="0.3"/>
+    <text x="50" y="50" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">&#x1F4DD;</text>
+    <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" fill="white" font-weight="bold">Strings</text>
+    <text x="20" y="75" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; String Manipulation</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; Reverse Operations</text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.9">&#x2022; StringBuilder</text>
+  </g>
+</svg>

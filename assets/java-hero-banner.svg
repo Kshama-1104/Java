@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="codeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f07167;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#fdfcdc;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00d4aa;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Coffee steam animation -->
+    <path id="steam" d="M 0,0 Q 2,-8 0,-15" stroke="#ddd" stroke-width="1.5" fill="none" opacity="0.6"/>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="1200" height="300" fill="url(#heroGradient)"/>
+  
+  <!-- Decorative code brackets -->
+  <text x="50" y="100" font-family="'Courier New', monospace" font-size="120" fill="#2d4a5e" opacity="0.15">{ }</text>
+  <text x="1000" y="250" font-family="'Courier New', monospace" font-size="120" fill="#2d4a5e" opacity="0.15">[ ]</text>
+  
+  <!-- Coffee cup icon -->
+  <g transform="translate(150, 120)">
+    <!-- Cup body -->
+    <path d="M 10,30 L 15,70 L 55,70 L 60,30 Z" fill="#d4a574" stroke="#8b6f47" stroke-width="2"/>
+    <!-- Handle -->
+    <path d="M 60,40 Q 75,40 75,55 Q 75,70 60,70" fill="none" stroke="#8b6f47" stroke-width="3"/>
+    <!-- Coffee surface -->
+    <ellipse cx="35" cy="32" rx="25" ry="5" fill="#3e2723"/>
+    <!-- Steam 1 -->
+    <use href="#steam" transform="translate(25, 15)">
+      <animate attributeName="opacity" values="0.6;0.3;0.6" dur="2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="25,15; 25,10; 25,15" dur="2s" repeatCount="indefinite"/>
+    </use>
+    <!-- Steam 2 -->
+    <use href="#steam" transform="translate(35, 10)">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="35,10; 35,5; 35,10" dur="2.5s" repeatCount="indefinite"/>
+    </use>
+    <!-- Steam 3 -->
+    <use href="#steam" transform="translate(45, 12)">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="45,12; 45,7; 45,12" dur="3s" repeatCount="indefinite"/>
+    </use>
+  </g>
+  
+  <!-- Main title -->
+  <text x="280" y="140" font-family="'Arial Black', sans-serif" font-size="56" fill="#e94560" font-weight="bold">
+    Java Programming
+  </text>
+  
+  <!-- Subtitle with code style -->
+  <text x="280" y="190" font-family="'Courier New', monospace" font-size="28" fill="url(#codeGlow)">
+    from(zero).to(hero);
+  </text>
+  
+  <!-- Decorative elements - binary code effect -->
+  <g opacity="0.1">
+    <text x="850" y="50" font-family="'Courier New', monospace" font-size="14" fill="#00d4aa">01001010</text>
+    <text x="900" y="80" font-family="'Courier New', monospace" font-size="14" fill="#00d4aa">01000001</text>
+    <text x="950" y="110" font-family="'Courier New', monospace" font-size="14" fill="#00d4aa">01010110</text>
+    <text x="1000" y="140" font-family="'Courier New', monospace" font-size="14" fill="#00d4aa">01000001</text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="280" width="1200" height="20" fill="#e94560"/>
+  
+  <!-- Skill badges -->
+  <g transform="translate(280, 220)">
+    <!-- Badge 1 -->
+    <rect x="0" y="0" width="140" height="35" rx="17.5" fill="#16a085" opacity="0.9"/>
+    <text x="70" y="23" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">50+ Programs</text>
+    
+    <!-- Badge 2 -->
+    <rect x="155" y="0" width="130" height="35" rx="17.5" fill="#2980b9" opacity="0.9"/>
+    <text x="220" y="23" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">7 Modules</text>
+    
+    <!-- Badge 3 -->
+    <rect x="300" y="0" width="160" height="35" rx="17.5" fill="#8e44ad" opacity="0.9"/>
+    <text x="380" y="23" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">Well Commented</text>
+  </g>
+  
+  <!-- Floating code symbols -->
+  <g opacity="0.2" fill="#fdfcdc">
+    <text x="800" y="200" font-family="'Courier New', monospace" font-size="24" transform="rotate(-15 800 200)">&lt;/&gt;</text>
+    <text x="1050" y="80" font-family="'Courier New', monospace" font-size="20" transform="rotate(10 1050 80)">()</text>
+    <text x="900" y="240" font-family="'Courier New', monospace" font-size="18">;</text>
+  </g>
+</svg>
