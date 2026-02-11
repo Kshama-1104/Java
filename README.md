@@ -124,9 +124,6 @@ Java/
 
 ## 🎯 Topics & Programs at a Glance
 
-<div align="center">
-<img src="./assets/module-icons.svg" alt="Module Icons" width="95%">
-</div>
 
 ### 1️⃣ Java Basics
 
@@ -294,9 +291,7 @@ public class programName {
 
 ## 🗺️ Learning Roadmap
 
-<div align="center">
-<img src="./assets/learning-roadmap.svg" alt="Learning Roadmap" width="90%">
-</div>
+
 
 ```
 Start Here
@@ -366,22 +361,17 @@ Contributions are welcome! Here's how you can help:
 
 ---
 
-## ⭐ Show Your Support
+## 👤 Creator
 
-If this repository helped you learn Java, give it a **star** ⭐ — it motivates more content!
+- 💼 **Created by**: Kshama Mishra
 
----
-
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
-  
-**Happy Coding! ☕💻**
 
-  <sub>Built with ❤️ for the Java learning community</sub>
-  
+
+
+Created by Kshama Mishra
+
 </div>
